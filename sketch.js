@@ -150,7 +150,7 @@ function displayScoreCard(){
 		text(score.score, 480, yOffSet);
 	});
 	yOffSet += 45;
-	text("Your dodged " + score + " obstacles", 320, yOffSet);
+	text("You dodged " + score + " obstacles", 320, yOffSet);
 	textSize(15);
 	text("Press 'S' to start again", 320, yOffSet + 45);
 }
