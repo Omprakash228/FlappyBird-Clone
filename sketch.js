@@ -163,14 +163,14 @@ function keyPressed(){
 	if(key ==' ' && !gameOver){
 		bird.up();
 	}
-	if(key == 'S' && gameOver && !isPopupOpen){
+	if((key == 'S' || key == 's') && gameOver && !isPopupOpen){
 		console.log('Start again');
 		score = 0;
 		pipes =[];
 		setup();
 		gameOver = false;
 	}
-	if(key == 'S' && !gameStarted){
+	if((key == 'S' || key == 's')&& !gameStarted){
 		gameStarted = true;
 	}
 }
