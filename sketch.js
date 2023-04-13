@@ -28,6 +28,7 @@ function preload() {
   birdImg = loadImage('assets/bird.png');
   pipeUp = loadImage('assets/pipe-green.png');
   pipeDown = loadImage('assets/pipe-green-Copy.png');
+  galactica = loadFont('assets/Galactica.ttf');
 }
 
 function setup(){
@@ -45,6 +46,7 @@ function setup(){
 
 function draw(){
 	image(bgImg, 0, 0);
+	textFont(galactica);
 	if(gameStarted){
 		numberOfFrames++;
 		for(let i = pipes.length-1;i>=0;i--){
@@ -82,7 +84,7 @@ function draw(){
 				if(!isSubmitted){
 					getName();
 				}
-				fill(0,0,255);
+				fill('#21593E');
 				displayScoreCard();
 			}
 		}
